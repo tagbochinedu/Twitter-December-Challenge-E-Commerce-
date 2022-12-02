@@ -31,7 +31,7 @@ code {
   background-position: center;
 }
 .bg-bg4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./Resources/91.png);
-  background-size: cover;
+  background: linear-gradient(rgba(36, 35, 35, 0.6), rgba(36,35,35,0.6)), url(./Resources/91.png);
+  background-size: 100% 100%;
   background-position: center;
 }

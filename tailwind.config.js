@@ -7,7 +7,8 @@ module.exports = {
         stix: "STIX Two Text",
         satoshi: "Satoshi, sans-serif",
         clash: "Clash Display",
-        belle: 'Bellefair'
+        belle: 'Bellefair',
+        pop: 'Poppins'
       },
       lineHeight: {
         lht: "1.6",

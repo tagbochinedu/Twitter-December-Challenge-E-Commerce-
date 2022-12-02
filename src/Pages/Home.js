@@ -151,28 +151,44 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-r from-[#4693ED] to-[#CFA786] py-6 px-[120px]">
+      <section className="bg-gradient-to-r from-[#4693ED] to-[#CFA786] py-6 px-[120px] text-white">
         <div className="max-w-fit">
           <h2 className="font-satoshi text-[40px] text-white">
             See Upcoming Auctions and Exhibitions
           </h2>
           <hr className="mx-8 mt-4 mb-5" />
         </div>
-        <div className="bg-bg4 pt-[299px] pl-[106px] pb-[52px]">
-          <div className="flex relative">
-            <div className="pt-1 pr-2">
+        <div className="bg-bg4 pt-[299px] pb-[52px] pr-9">
+          <div className="flex relative pl-[77px]">
+            <div className="pt-1 pr-4">
               <div className="w-4 h-4 rounded-full bg-white" />
             </div>
-            <div className>
-              <h4 className="font-belle text-white text-3xl">
-                MONALISA REDEFINED
-                <br />
-                IN STYLE.
-              </h4>
-            </div>
+            <h4 className="font-belle text-white text-3xl">
+              MONALISA REDEFINED
+              <br />
+              IN STYLE.
+            </h4>
           </div>
-          <div className="mt-4">
-            <h6 className="uppercase">Start on : 08:00 GTS . Monday </h6>
+          <div className="flex items-center pl-[30px]">
+            <div className="pr-8">
+              <p className="font-belle text-6xl">01</p>
+            </div>
+            <h6 className="uppercase font-pop text-sm">
+              Start on : 08:00 GTS . Monday{" "}
+            </h6>
+          </div>
+          <div className="ml-[111px] flex justify-between items-end">
+            <div className="w-6/12">
+              <p className="font-satoshi font-medium text-base">
+                GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
+                INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
+                HIGHEST AND LOWEST BIDS.
+              </p>
+            </div>
+            <div className="w-4/10 font-satoshi text-2xl font-normal flex items-center">
+              <p className="mr-10">See More</p>
+              <p className="p-4 rounded-xl border-white border-2 hover:bg-white hover:text-black transition-all ease-in-out duration-500">Set a reminder</p>
+            </div>
           </div>
         </div>
       </section>
