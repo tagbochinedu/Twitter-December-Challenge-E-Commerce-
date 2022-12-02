@@ -33,10 +33,10 @@ const Home = () => {
         </div>
         <div className="border-y-lgr border-y-[0.5px] py-16 flex justify-between">
           <div className="w-6/12 mr-20">
-            <img src={img1} alt="lady" className="w-full" />
+            <Hpg />
           </div>
           <div className="w-6/12 ml-20">
-            <Hpg />
+            <img src={img1} alt="lady" className="w-full" />
           </div>
         </div>
       </div>
