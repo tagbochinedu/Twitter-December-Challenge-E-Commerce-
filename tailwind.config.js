@@ -7,6 +7,7 @@ module.exports = {
         stix: "STIX Two Text",
         satoshi: "Satoshi, sans-serif",
         clash: "Clash Display",
+        belle: 'Bellefair'
       },
       lineHeight: {
         lht: "1.6",
@@ -14,9 +15,6 @@ module.exports = {
       colors: {
         lbl: "#292929",
         lgr: "#333333",
-      },
-      backgroundImage: {
-        bg1: "url('/src/Resources/rectangle299.png')",
       },
     },
   },

@@ -16,7 +16,22 @@ code {
     monospace;
 }
 .bg-bg1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./Resources/rectangle299.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./Resources/299.png);
   background-size: 100% 100%;
+  background-position: center;
+}
+.bg-bg2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./Resources/300.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+.bg-bg3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./Resources/301.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+.bg-bg4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./Resources/91.png);
+  background-size: cover;
   background-position: center;
 }
