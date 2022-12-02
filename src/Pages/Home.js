@@ -187,8 +187,21 @@ const Home = () => {
             </div>
             <div className="w-4/10 font-satoshi text-2xl font-normal flex items-center">
               <p className="mr-10">See More</p>
-              <p className="p-4 rounded-xl border-white border-2 hover:bg-white hover:text-black transition-all ease-in-out duration-500">Set a reminder</p>
+              <p className="p-4 rounded-xl border-white border-2 hover:bg-white hover:text-black transition-all ease-in-out duration-500">
+                Set a reminder
+              </p>
             </div>
+          </div>
+        </div>
+        <div className="flex justify-between mt-6">
+          <div></div>
+          <div>
+            <button className="rounded-full bg-[#D6B89D] w-16 h-16 shadow-lg drop-shadow-md mr-2 hover:bg-[#e3c3a6] active:bg-[#D6B89D]">
+              &#60;
+            </button>
+            <button className="rounded-full bg-[#D6B89D] w-16 h-16 shadow-lg drop-shadow-md ml-2 hover:bg-[#e3c3a6] active:bg-[#D6B89D]">
+              &#62;
+            </button>
           </div>
         </div>
       </section>
