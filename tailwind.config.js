@@ -15,6 +15,9 @@ module.exports = {
         lbl: "#292929",
         lgr: "#333333",
       },
+      backgroundImage: {
+        bg1: "url('/src/Resources/rectangle299.png')",
+      },
     },
   },
   plugins: [],
