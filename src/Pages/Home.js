@@ -285,14 +285,14 @@ const Home = () => {
           people at a gig, more people at a football match, than with colour
           photography. Everything looks more exciting.”– Jack Lowden
         </p>
-        <div className="bg-[#D9D9D9] absolute left-[27%] right-[13%] bottom-0 top-[160px]">
-          <img src={img4} alt="slide" className="w-[605px] absolute z-30 fade3" />
+        <div className="bg-[#D9D9D9] absolute left-[27%] right-[13%] bottom-0 top-[120px]">
+          <img src={img4} alt="slide" className="w-[640px] bottom-0 absolute z-30 fade3" />
           <img
             src={img5}
             alt="slide"
             className="w-[605px] bottom-0 absolute z-30 fade2"
           />
-          <img src={img6} alt="slide" className="w-full absolute z-30 fade1" />
+          <img src={img6} alt="slide" className="w-full absolute z-30 fade1 bottom-0" />
         </div>
         <div className="text-center z-20 absolute font-clash bottom-[4%] right-[25%]">
           <h2 className="text-4xl font-semibold">CIRCA</h2>
