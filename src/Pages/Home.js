@@ -19,7 +19,7 @@ const Home = () => {
         <p className="font-satoshi font-medium text-center text-[27px] leading-lht">
           Flip through more than 10,000 vintage shots, old photograghs, historic
           <br />
-          images and captures seamlessly in one place. Register to get top
+          images and captures seamlessly in one place. Register to get to
           access.
         </p>
       </section>
@@ -206,11 +206,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-[190px] border-y-[0.5px] border-lgr text-lgr">
+      <section className="my-[190px] border-y-[0.5px] border-lgr text-lgr">
         <Link to="/marketplace">
-          <div
-            className="py-[59px] pl-20 pr-72 flex justify-between items-center"
-          >
+          <div className="py-[59px] pl-20 pr-72 flex justify-between items-center">
             <h2 className="font-satoshi font-medium text-5xl">
               Explore Marketplace
             </h2>
@@ -250,6 +248,35 @@ const Home = () => {
             </svg>
           </div>
         </Link>
+      </section>
+      <section className="bg-[#E2E2E2] pl-[86px] pr-32 py-[76px] font-clash relative">
+        <div className="flex justify-between  mb-12">
+          <h2 className=" text-6xl font-semibold leading-[1.5]">
+            TOP CREATORS OF
+            <br /> THE WEEK
+          </h2>
+          <div className="flex justify-between items-center">
+            <div className="h-full w-3 bg-[#AEAEAE] rounded-full flex items-end">
+              <span className="bg-black w-full py-5 rounded-full">h</span>
+            </div>
+            <div>
+              <ul>
+                <li className="text-[40px] mb-6 ml-8">Editorials</li>
+                <li className="text-[40px] my-6 ml-8">Fashion</li>
+                <li className="text-[40px] my-6 ml-8">Lifestyle</li>
+                <li className="text-[40px] mt-6 ml-8">Blueprint</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p className="font-extralight text-3xl text-[#5D5D5D] max-w-[1050px] font-clash">
+          “Everything always looked better in black and white. Everything always
+          as if it were the first time; there’s always more people in a black
+          and white photograph. It just makes it seem that there were more
+          people at a gig, more people at a football match, than with colour
+          photography. Everything looks more exciting.”– Jack Lowden
+        </p>
+        <div className="bg-[#D9D9D9] w-64 h-32 absolute top-0 left-[27%] top-[]"></div>
       </section>
     </main>
   );
