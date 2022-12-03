@@ -1,3 +1,4 @@
+
 const NewsLetter = () => {
   return (
     <section className="mx-14 py-16 border-[0.5px] border-lgr text-lgr font-bask">

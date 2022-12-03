@@ -9,7 +9,8 @@ module.exports = {
         clash: "Clash Display",
         belle: 'Bellefair',
         pop: 'Poppins',
-        bask: 'Baskervville'
+        bask: 'Baskervville',
+        rubik: 'Rubik'
       },
       lineHeight: {
         lht: "1.6",
