@@ -8,7 +8,8 @@ module.exports = {
         satoshi: "Satoshi, sans-serif",
         clash: "Clash Display",
         belle: 'Bellefair',
-        pop: 'Poppins'
+        pop: 'Poppins',
+        bask: 'Baskervville'
       },
       lineHeight: {
         lht: "1.6",

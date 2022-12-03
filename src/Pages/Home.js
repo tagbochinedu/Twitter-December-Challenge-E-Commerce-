@@ -6,6 +6,7 @@ import img3 from "../Resources/301.png";
 import img4 from "../Resources/302.png";
 import img5 from "../Resources/303.png";
 import img6 from "../Resources/304.png";
+import NewsLetter from "../Components/NewsLetter";
 import Hpg from "../Components/HomePageGrid";
 
 const Home = () => {
@@ -48,13 +49,13 @@ const Home = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
-                  class="w-12 border-white border-[0.5px] rounded-full"
+                  className="w-12 border-white border-[0.5px] rounded-full"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
@@ -92,13 +93,13 @@ const Home = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
-                  class="w-12 border-white border-[0.5px] rounded-full"
+                  className="w-12 border-white border-[0.5px] rounded-full"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
@@ -130,13 +131,13 @@ const Home = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
-                  class="w-12 border-white border-[0.5px] rounded-full"
+                  className="w-12 border-white border-[0.5px] rounded-full"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
@@ -197,8 +198,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between mt-6">
-          <div></div>
+        <div className="flex justify-between items-center mt-6">
+          <div className="h-2 w-3/12 bg-[#AEAEAE] rounded-full flex items-end relative z-10">
+            <div className="bg-white w-2/12 rounded-full h-full"></div>
+          </div>
           <div>
             <button className="rounded-full bg-[#D6B89D] w-16 h-16 shadow-lg drop-shadow-md mr-2 hover:bg-[#e3c3a6] active:bg-[#D6B89D]">
               &#60;
@@ -219,13 +222,13 @@ const Home = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="w-20 text-[#4693ED] rounded-full animate"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
@@ -239,20 +242,20 @@ const Home = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="w-20 text-[#4693ED] rounded-full animate"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
           </div>
         </Link>
       </section>
-      <section className="bg-[#E2E2E2] pl-[86px] pr-32 pt-[50px] pb-[250px] font-clash relative">
+      <section className="bg-[#E2E2E2] pl-[86px] pr-32 pt-[50px] pb-[250px] mb-36 font-clash relative">
         <div className="flex justify-between  mb-12">
           <h2 className=" text-6xl font-semibold leading-[1.5]">
             TOP CREATORS OF
@@ -285,14 +288,22 @@ const Home = () => {
           people at a gig, more people at a football match, than with colour
           photography. Everything looks more exciting.”– Jack Lowden
         </p>
-        <div className="bg-[#D9D9D9] absolute left-[27%] right-[13%] bottom-0 top-[120px]">
-          <img src={img4} alt="slide" className="w-[640px] bottom-0 absolute z-30 fade3" />
+        <div className="bg-[#D9D9D9] absolute left-[27%] right-[13%] -bottom-10 top-[120px]">
+          <img
+            src={img4}
+            alt="slide"
+            className="w-[640px] bottom-0 absolute z-30 fade3"
+          />
           <img
             src={img5}
             alt="slide"
-            className="w-[605px] bottom-0 absolute z-30 fade2"
+            className="w-[605px] bottom-10 absolute z-30 fade2"
           />
-          <img src={img6} alt="slide" className="w-full absolute z-30 fade1 bottom-0" />
+          <img
+            src={img6}
+            alt="slide"
+            className="w-full absolute z-30 fade1 bottom-0"
+          />
         </div>
         <div className="text-center z-20 absolute font-clash bottom-[4%] right-[25%]">
           <h2 className="text-4xl font-semibold">CIRCA</h2>
@@ -301,6 +312,7 @@ const Home = () => {
           </h1>
         </div>
       </section>
+      <NewsLetter/>
     </main>
   );
 };
