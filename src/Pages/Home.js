@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import img1 from "../Resources/299.png";
 import img2 from "../Resources/300.png";
 import img3 from "../Resources/301.png";
@@ -73,7 +74,7 @@ const Home = () => {
             <Hpg />
           </div>
           <div
-            className="w-6/12 mr-20 relative"
+            className="w-6/12 ml-20 relative"
             onMouseEnter={() => {
               setHover2(true);
             }}
@@ -204,6 +205,51 @@ const Home = () => {
             </button>
           </div>
         </div>
+      </section>
+      <section className="mt-[190px] border-y-[0.5px] border-lgr text-lgr">
+        <Link to="/marketplace">
+          <div
+            className="py-[59px] pl-20 pr-72 flex justify-between items-center"
+          >
+            <h2 className="font-satoshi font-medium text-5xl">
+              Explore Marketplace
+            </h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-20 text-[#4693ED] rounded-full animate"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </div>
+        </Link>
+        <hr className="border-lgr" />
+        <Link to="/auctions">
+          <div className="py-[59px] pl-20 pr-72 flex justify-between items-center">
+            <h2 className="font-satoshi font-medium text-5xl">See Auctions</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-20 text-[#4693ED] rounded-full animate"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </div>
+        </Link>
       </section>
     </main>
   );
