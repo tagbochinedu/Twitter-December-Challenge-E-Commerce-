@@ -276,7 +276,7 @@ const Home = () => {
           people at a gig, more people at a football match, than with colour
           photography. Everything looks more exciting.”– Jack Lowden
         </p>
-        <div className="bg-[#D9D9D9] w-64 h-32 absolute top-0 left-[27%] top-[]"></div>
+        <div className="bg-[#D9D9D9] w-64 h-32 absolute top-0 left-[29%] top-[160px]"></div>
       </section>
     </main>
   );
