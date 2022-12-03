@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import img1 from "../Resources/299.png";
 import img2 from "../Resources/300.png";
 import img3 from "../Resources/301.png";
+import img4 from "../Resources/302.png";
+import img5 from "../Resources/303.png";
+import img6 from "../Resources/304.png";
 import Hpg from "../Components/HomePageGrid";
 
 const Home = () => {
@@ -249,34 +252,54 @@ const Home = () => {
           </div>
         </Link>
       </section>
-      <section className="bg-[#E2E2E2] pl-[86px] pr-32 py-[76px] font-clash relative">
+      <section className="bg-[#E2E2E2] pl-[86px] pr-32 pt-[50px] pb-[250px] font-clash relative">
         <div className="flex justify-between  mb-12">
           <h2 className=" text-6xl font-semibold leading-[1.5]">
             TOP CREATORS OF
             <br /> THE WEEK
           </h2>
           <div className="flex justify-between items-center">
-            <div className="h-full w-3 bg-[#AEAEAE] rounded-full flex items-end">
+            <div className="h-full w-3 bg-[#AEAEAE] rounded-full flex items-end relative z-10">
               <span className="bg-black w-full py-5 rounded-full">h</span>
             </div>
             <div>
               <ul>
-                <li className="text-[40px] mb-6 ml-8">Editorials</li>
-                <li className="text-[40px] my-6 ml-8">Fashion</li>
-                <li className="text-[40px] my-6 ml-8">Lifestyle</li>
-                <li className="text-[40px] mt-6 ml-8">Blueprint</li>
+                <li className="text-[40px] mb-3 ml-8 relative z-10">
+                  Editorials
+                </li>
+                <li className="text-[40px] my-3 ml-8 relative z-10">Fashion</li>
+                <li className="text-[40px] my-3 ml-8 relative z-10">
+                  Lifestyle
+                </li>
+                <li className="text-[40px] mt-3 ml-8 relative z-10">
+                  Blueprint
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <p className="font-extralight text-3xl text-[#5D5D5D] max-w-[1050px] font-clash">
+        <p className="font-extralight text-3xl text-[#5D5D5D] max-w-[1050px] font-clash relative z-10">
           “Everything always looked better in black and white. Everything always
           as if it were the first time; there’s always more people in a black
           and white photograph. It just makes it seem that there were more
           people at a gig, more people at a football match, than with colour
           photography. Everything looks more exciting.”– Jack Lowden
         </p>
-        <div className="bg-[#D9D9D9] w-64 h-32 absolute top-0 left-[29%] top-[160px]"></div>
+        <div className="bg-[#D9D9D9] absolute left-[27%] right-[13%] bottom-0 top-[160px]">
+          <img src={img4} alt="slide" className="w-[605px] absolute z-30 fade3" />
+          <img
+            src={img5}
+            alt="slide"
+            className="w-[605px] bottom-0 absolute z-30 fade2"
+          />
+          <img src={img6} alt="slide" className="w-full absolute z-30 fade1" />
+        </div>
+        <div className="text-center z-20 absolute font-clash bottom-[4%] right-[25%]">
+          <h2 className="text-4xl font-semibold">CIRCA</h2>
+          <h1 className="text-[170px] font-semibold line-through decoration-8">
+            1985
+          </h1>
+        </div>
       </section>
     </main>
   );

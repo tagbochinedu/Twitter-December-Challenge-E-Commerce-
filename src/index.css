@@ -55,3 +55,64 @@ code {
     animation-delay: 150;
   }
 }
+
+.fade1 {
+  animation: fade1 infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+}
+@keyframes fade1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0
+  }
+  75% {
+opacity: 0
+  }
+  100% {
+    opacity: 1
+  }}
+
+.fade2 {
+  animation: fade2 infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+}
+@keyframes fade2 {
+      0% {
+        opacity: 0;
+      }
+  
+      50% {
+        opacity: 1;
+      } 
+      75% {
+        opacity: 0
+      }
+      100% {
+        opacity: 0
+      }
+    }
+
+        .fade3 {
+          animation: fade3 infinite;
+          animation-timing-function: ease-in-out;
+          animation-duration: 20s;
+        }
+    
+        @keyframes fade3 {
+          0% {
+            opacity: 0;
+          }    
+          50% {
+            opacity: 0
+          }    
+          75% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0
+          }
+        }
