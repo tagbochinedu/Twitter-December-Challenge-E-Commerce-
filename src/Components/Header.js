@@ -27,10 +27,10 @@ const Header = () => {
         <h2 className="font-stix text-3xl font-bold hidden lg:block">ARTSY.</h2>
       </div>
       <div className="font-satoshi font-medium text-2xl hidden lg:block">
-        <NavLink className="px-6">Home</NavLink>
-        <NavLink className="px-6">MarketPlace</NavLink>
-        <NavLink className="px-6">Auctions</NavLink>
-        <NavLink className="px-6">Drop</NavLink>
+        <NavLink to='/' className="px-6">Home</NavLink>
+        <NavLink to='/marketplace' className="px-6">MarketPlace</NavLink>
+        <NavLink to='/auctions' className="px-6">Auctions</NavLink>
+        <NavLink to='/drop' className="px-6">Drop</NavLink>
       </div>
       <div className="block lg:hidden">
         <h2 className="font-stix text-2xl md:text-3xl font-bold">ARTSY.</h2>
