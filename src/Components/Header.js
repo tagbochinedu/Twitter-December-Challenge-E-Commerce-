@@ -1,8 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+
+import SideNav from "./SideNav";
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    if (width > 1024) {
+      setSidebar(false);
+    }
+  }, [width]);
+
   return (
     <div className="flex justify-between items-center md:items-baseline xl:pl-48 xl:pt-14 xl:pr-32 lg:px-36 lg:pt-10 md:px-24 px-5 pt-8 text-lbl">
       <div>
@@ -14,7 +28,7 @@ const Header = () => {
           stroke="currentColor"
           className="w-5 h-5 md:w-10 md:h-10 block lg:hidden cursor-pointer"
           onClick={() => {
-            setSidebar(!sidebar);
+            setSidebar(true);
           }}
         >
           <path
@@ -27,10 +41,18 @@ const Header = () => {
         <h2 className="font-stix text-3xl font-bold hidden lg:block">ARTSY.</h2>
       </div>
       <div className="font-satoshi font-medium text-2xl hidden lg:block">
-        <NavLink to='/' className="px-6">Home</NavLink>
-        <NavLink to='/marketplace' className="px-6">MarketPlace</NavLink>
-        <NavLink to='/auctions' className="px-6">Auctions</NavLink>
-        <NavLink to='/drop' className="px-6">Drop</NavLink>
+        <NavLink to="/" className="px-6">
+          Home
+        </NavLink>
+        <NavLink to="/marketplace" className="px-6">
+          MarketPlace
+        </NavLink>
+        <NavLink to="/auctions" className="px-6">
+          Auctions
+        </NavLink>
+        <NavLink to="/drop" className="px-6">
+          Drop
+        </NavLink>
       </div>
       <div className="block lg:hidden">
         <h2 className="font-stix text-2xl md:text-3xl font-bold">ARTSY.</h2>
@@ -42,7 +64,22 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-10 md:h-10 mr-2 md:mr-6"
+          className="w-5 h-5 md:w-10 md:h-10 mr-1 md:mr-6 block md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-5 h-5 md:w-10 md:h-10 ml-1 md:mr-6"
         >
           <path
             strokeLinecap="round"
@@ -57,7 +94,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-10 md:h-10 ml-2 md:ml-6"
+          className="w-5 h-5 md:w-10 md:h-10 ml-2 md:ml-6 hidden md:block"
         >
           <path
             strokeLinecap="round"
@@ -66,6 +103,12 @@ const Header = () => {
           />
         </svg>
       </div>
+      <SideNav
+        sidebar={sidebar}
+        onClick={() => {
+          setSidebar(false);
+        }}
+      />
     </div>
   );
 };

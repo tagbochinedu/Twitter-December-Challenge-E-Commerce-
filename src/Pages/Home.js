@@ -15,12 +15,12 @@ const Home = () => {
   const [hover3, setHover3] = useState(false);
   return (
     <main>
-      <section className="mx-48 text-center">
-        <h1 className="my-12 font-clash font-bold text-7xl leading-lht text-lbl">
+      <section className=" xl:pl-48 xl:pt-14 xl:pr-32 lg:px-36 lg:pt-10 md:px-24 px-5 text-center">
+        <h1 className="my-5 md:my-12 font-clash font-medium lg:font-bold text-2xl md:text-5xl lg:text-7xl leading-lht text-lbl">
           Photography is poetry &<br />
           beautiful untold stories
         </h1>
-        <p className="font-satoshi font-medium text-center text-[27px] leading-lht">
+        <p className="font-satoshi font-medium text-center text-base md:text-[27px] leading-lht">
           Flip through more than 10,000 vintage shots, old photograghs, historic
           <br />
           images and captures seamlessly in one place. Register to get to
@@ -28,13 +28,13 @@ const Home = () => {
         </p>
       </section>
 
-      <section className="mx-[120px] ">
-        <h2 className="font-satoshi text-5xl text-lgr mb-9">
+      <section className="mx-2 xl:mx-[120px] ">
+        <h2 className="font-satoshi font-semibold lg:font-normal text-3xl md:text-4xl xl:text-5xl text-lgr mb-9">
           Featured products
         </h2>
-        <div className="border-t-lgr border-t-[0.5px] py-16 flex justify-between relative">
+        <div className="lg:border-t-lgr lg:border-t-[0.5px] md:py-16 lg:flex justify-evenly relative">
           <div
-            className="w-6/12 mr-20 relative"
+            className="w-full lg:w-6/12 relative"
             onMouseEnter={() => {
               setHover(true);
             }}
@@ -42,16 +42,19 @@ const Home = () => {
               setHover(false);
             }}
           >
-            <div className="bg-bg1 h-full text-white flex justify-center items-center text-2xl font-medium font-satoshi absolute left-0 right-0 z-10">
-              View product{" "}
-              <span className="ml-10">
+            <div className="bg-bg1 w-auto h-64 lg:h-full text-white py-12 px-16 lg:px-auto lg:py-auto lg:flex justify-center items-center text-2xl font-medium font-satoshi lg:absolute left-0 right-0 z-10">
+              <span className="hidden lg:block">View product</span>{" "}
+              <h3 className="font-clash text-center text-3xl font-bold relative lg:hidden block">
+                Boolean Egyptian
+              </h3>
+              <div className=" mt-6 float-right md:float-start lg:ml-10 border-white border-[0.5px] rounded-full inline-flex lg:block p-3 lg:p-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-12 border-white border-[0.5px] rounded-full"
+                  className="w-12"
                 >
                   <path
                     strokeLinecap="round"
@@ -59,26 +62,26 @@ const Home = () => {
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
             <img
               src={img1}
               alt="lady"
-              className={`w-full h-full transition-all ease-in-out delay-150 duration-500 absolute z-20 ${
+              className={`w-full h-full transition-all ease-in-out delay-150 duration-500 absolute hidden lg:block z-20 ${
                 hover ? "opacity-0" : "opacity-100"
               }`}
             />
           </div>
-          <div className="w-6/12 ml-20">
+          <div className="lg:w-4/12">
             <Hpg />
           </div>
         </div>
-        <div className="border-t-lgr border-t-[0.5px] py-16 flex justify-between">
-          <div className="w-6/12 mr-20">
+        <div className="lg:border-t-lgr lg:border-t-[0.5px] md:py-16 flex flex-col-reverse lg:flex-row justify-evenly relative">
+          <div className="w-full lg:w-4/12">
             <Hpg />
           </div>
           <div
-            className="w-6/12 ml-20 relative"
+            className="w-full lg:w-6/12 relative"
             onMouseEnter={() => {
               setHover2(true);
             }}
@@ -86,16 +89,19 @@ const Home = () => {
               setHover2(false);
             }}
           >
-            <div className="bg-bg2 h-full text-white flex justify-center items-center text-2xl font-medium font-satoshi absolute left-0 right-0 z-10">
-              View product{" "}
-              <span className="ml-10">
+            <div className="bg-bg2 w-auto h-64 lg:h-full text-white py-12 px-16 lg:px-auto lg:py-auto lg:flex justify-center items-center text-2xl font-medium font-satoshi lg:absolute left-0 right-0 z-10">
+              <span className="hidden lg:block">View product</span>{" "}
+              <h3 className="font-clash text-center text-3xl font-bold relative lg:hidden block">
+                Are We There Yet?
+              </h3>
+              <div className=" mt-6 float-right md:float-start lg:ml-10 border-white border-[0.5px] rounded-full inline-flex lg:block p-3 lg:p-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-12 border-white border-[0.5px] rounded-full"
+                  className="w-12"
                 >
                   <path
                     strokeLinecap="round"
@@ -103,20 +109,20 @@ const Home = () => {
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
             <img
               src={img2}
               alt="lady"
-              className={`w-full h-full transition-all ease-in-out delay-150 duration-500 absolute z-20 ${
+              className={`w-full h-full transition-all ease-in-out delay-150 duration-500 absolute hidden lg:block z-20 ${
                 hover2 ? "opacity-0" : "opacity-100"
               }`}
             />
           </div>
         </div>
-        <div className="border-t-lgr border-t-[0.5px] py-16 flex justify-between relative">
+        <div className="lg:border-t-lgr lg:border-t-[0.5px] md:py-16 lg:flex justify-evenly relative">
           <div
-            className="w-6/12 mr-20 relative"
+            className="w-full lg:w-6/12 relative"
             onMouseEnter={() => {
               setHover3(true);
             }}
@@ -124,16 +130,19 @@ const Home = () => {
               setHover3(false);
             }}
           >
-            <div className="bg-bg3 h-full text-white flex justify-center items-center text-2xl font-medium font-satoshi absolute left-0 right-0 z-10">
-              View product{" "}
-              <span className="ml-10">
+            <div className="bg-bg3 w-auto h-64 lg:h-full text-white py-12 px-16 lg:px-auto lg:py-auto lg:flex justify-center items-center text-2xl font-medium font-satoshi lg:absolute left-0 right-0 z-10">
+              <span className="hidden lg:block">View product</span>{" "}
+              <h3 className="font-clash text-center text-3xl font-bold relative lg:hidden block">
+                Oloibiri 1997
+              </h3>
+              <div className=" mt-6 float-right md:float-start lg:ml-10 border-white border-[0.5px] rounded-full inline-flex lg:block p-3 lg:p-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-12 border-white border-[0.5px] rounded-full"
+                  className="w-12"
                 >
                   <path
                     strokeLinecap="round"
@@ -141,64 +150,64 @@ const Home = () => {
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
-              </span>
+              </div>
             </div>
             <img
               src={img3}
               alt="lady"
-              className={`w-full h-full transition-all ease-in-out delay-150 duration-500 absolute z-20 ${
+              className={`w-full h-full transition-all ease-in-out delay-150 duration-500 absolute hidden lg:block z-20 ${
                 hover3 ? "opacity-0" : "opacity-100"
               }`}
             />
           </div>
-          <div className="w-6/12 ml-20">
+          <div className="lg:w-4/12">
             <Hpg />
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-r from-[#4693ED] to-[#CFA786] py-6 px-[120px] text-white">
-        <div className="max-w-fit">
+      <section className="bg-gradient-to-r from-[#4693ED] to-[#CFA786] py-6 px-8 md:px-16 lg:px-[120px] text-white">
+        <div className="max-w-fit hidden lg:block">
           <h2 className="font-satoshi text-[40px] text-white">
             See Upcoming Auctions and Exhibitions
           </h2>
           <hr className="mx-8 mt-4 mb-5" />
         </div>
-        <div className="bg-bg4 pt-[299px] pb-[52px] pr-9">
-          <div className="flex relative pl-[77px]">
-            <div className="pt-1 pr-4">
+        <div className="bg-bg4 pl-2 pt-8 pr-4 pb-6 lg:pt-[299px] lg:pb-[52px] lg:pr-9">
+          <div className="flex relative mb-6 lg:pl-[70px]">
+            <div className="pt-1 pr-10 lg:pr-8">
               <div className="w-4 h-4 rounded-full bg-white" />
             </div>
-            <h4 className="font-belle text-white text-3xl">
+            <h4 className="font-belle text-medium text-white text-xl lg:text-3xl">
               MONALISA REDEFINED
               <br />
               IN STYLE.
             </h4>
           </div>
-          <div className="flex items-center pl-[30px]">
-            <div className="pr-8">
-              <p className="font-belle text-6xl">01</p>
+          <div className="flex items-center lg:pl-[30px]">
+            <div className="pr-5 lg:pr-8">
+              <p className="font-belle text-4xl lg:text-6xl">01</p>
             </div>
             <h6 className="uppercase font-pop text-sm">
               Start on : 08:00 GTS . Monday{" "}
             </h6>
           </div>
-          <div className="ml-[111px] flex justify-between items-end">
-            <div className="w-6/12">
-              <p className="font-satoshi font-medium text-base">
+          <div className="ml-14 lg:ml-[111px] lg:flex justify-between items-end">
+            <div className="lg:w-6/12">
+              <p className="font-satoshi font-medium text-xs lg:text-base">
                 GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
                 INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
                 HIGHEST AND LOWEST BIDS.
               </p>
             </div>
-            <div className="w-4/10 font-satoshi text-2xl font-normal flex items-center">
+            <div className="lg:w-4/10 font-satoshi text-sm lg:text-2xl font-normal flex items-center justify-end">
               <p className="mr-10">See More</p>
-              <p className="p-4 rounded-xl border-white border-2 hover:bg-white hover:text-black transition-all ease-in-out duration-500">
+              <p className="p-2 lg:p-4 rounded-xl border-white border-2 hover:bg-white hover:text-black transition-all ease-in-out duration-500">
                 Set a reminder
               </p>
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center mt-6">
+        <div className="hidden lg:flex justify-between items-center mt-6">
           <div className="h-2 w-3/12 bg-[#AEAEAE] rounded-full flex items-end relative z-10">
             <div className="bg-white w-2/12 rounded-full h-full"></div>
           </div>
@@ -212,19 +221,19 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="my-[190px] border-y-[0.5px] border-lgr text-lgr">
-        <Link to="/marketplace">
-          <div className="py-[59px] pl-20 pr-72 flex justify-between items-center">
-            <h2 className="font-satoshi font-medium text-5xl">
-              Explore Marketplace
-            </h2>
+      <section className="my-16 lg:my-[190px] border-y-[0.5px] border-lgr text-lgr">
+        <div className="py-6 lg:py-[59px] pl-2 lg:pl-20 pr-9 lg:pr-72 flex justify-between items-center">
+          <h2 className="font-satoshi font-medium text-2xl lg:text-5xl">
+            Explore Marketplace
+          </h2>
+          <Link to="/marketplace">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-20 text-[#4693ED] rounded-full animate"
+              className="border-[0.5px] lg:border-0 border-lgr w-20 lg:text-[#4693ED] animate"
             >
               <path
                 strokeLinecap="round"
@@ -232,19 +241,23 @@ const Home = () => {
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
-          </div>
-        </Link>
+          </Link>
+        </div>
+
         <hr className="border-lgr" />
-        <Link to="/auctions">
-          <div className="py-[59px] pl-20 pr-72 flex justify-between items-center">
-            <h2 className="font-satoshi font-medium text-5xl">See Auctions</h2>
+
+        <div className="py-6 lg:py-[59px] pl-2 lg:pl-20 pr-9 lg:pr-72 flex justify-between items-center">
+          <h2 className="font-satoshi font-medium text-2xl lg:text-5xl">
+            See Auctions
+          </h2>
+          <Link to="/auctions">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-20 text-[#4693ED] rounded-full animate"
+              className=" border-[0.5px] lg:border-0 border-lgr w-20 lg:text-[#4693ED] animate"
             >
               <path
                 strokeLinecap="round"
@@ -252,47 +265,47 @@ const Home = () => {
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </section>
-      <section className="bg-[#E2E2E2] pl-[86px] pr-32 pt-[50px] pb-[250px] mb-36 font-clash relative">
-        <div className="flex justify-between  mb-12">
-          <h2 className=" text-6xl font-semibold leading-[1.5]">
+      <section className="bg-[#E2E2E2] px-1 lg:pl-[86px] lg:pr-32 pt-2 lg:pt-12 pb-16 lg:pb-[250px] mb-12 lg:mb-36 font-clash relative">
+        <div className="flex justify-between  mb-4 lg:mb-12">
+          <h2 className="text-2xl lg:text-6xl font-semibold leading-[1.5] relative z-30">
             TOP CREATORS OF
             <br /> THE WEEK
           </h2>
           <div className="flex justify-between items-center">
             <div className="h-full w-3 bg-[#AEAEAE] rounded-full flex items-end relative z-10">
-              <span className="bg-black w-full py-5 rounded-full">h</span>
+              <span className="bg-black w-full py-1 lg:py-5 rounded-full">h</span>
             </div>
             <div>
               <ul>
-                <li className="text-[40px] mb-3 ml-8 relative z-10">
+                <li className="text-base lg:text-[40px] mb-3 ml-8 relative z-10">
                   Editorials
                 </li>
-                <li className="text-[40px] my-3 ml-8 relative z-10">Fashion</li>
-                <li className="text-[40px] my-3 ml-8 relative z-10">
+                <li className="text-base lg:text-[40px] my-3 ml-8 relative z-10">Fashion</li>
+                <li className="text-base lg:text-[40px] my-3 ml-8 relative z-10">
                   Lifestyle
                 </li>
-                <li className="text-[40px] mt-3 ml-8 relative z-10">
+                <li className="text-base lg:text-[40px] mt-3 ml-8 relative z-10">
                   Blueprint
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <p className="font-extralight text-3xl text-[#5D5D5D] max-w-[1050px] font-clash relative z-10">
+        <p className="font-extralight text-xs lg:text-3xl text-[#5D5D5D] max-w-[1050px] font-clash relative z-10">
           “Everything always looked better in black and white. Everything always
           as if it were the first time; there’s always more people in a black
           and white photograph. It just makes it seem that there were more
           people at a gig, more people at a football match, than with colour
           photography. Everything looks more exciting.”– Jack Lowden
         </p>
-        <div className="bg-[#D9D9D9] absolute left-[27%] right-[13%] -bottom-10 top-[120px]">
+        <div className="bg-[#D9D9D9] absolute left-[27%] right-[13%] -bottom-10 top-10 lg:top-[120px]">
           <img
             src={img4}
             alt="slide"
-            className="w-[640px] bottom-0 absolute z-30 fade3"
+            className="w-[640px] top-0 lg:top-auto lg:bottom-0 absolute z-30 fade3"
           />
           <img
             src={img5}
@@ -305,14 +318,14 @@ const Home = () => {
             className="w-full absolute z-30 fade1 bottom-0"
           />
         </div>
-        <div className="text-center z-20 absolute font-clash bottom-[4%] right-[25%]">
-          <h2 className="text-4xl font-semibold">CIRCA</h2>
-          <h1 className="text-[170px] font-semibold line-through decoration-8">
+        <div className="text-center z-20 absolute font-clash bottom-10 lg:bottom-[4%] right-2 lg:right-[25%]">
+          <h2 className="text-2xl lg:text-4xl font-semibold">CIRCA</h2>
+          <h1 className="text-6xl lg:text-[170px] font-semibold line-through decoration-2 lg:decoration-8">
             1985
           </h1>
         </div>
       </section>
-      <NewsLetter/>
+      <NewsLetter />
     </main>
   );
 };
