@@ -18,7 +18,7 @@ const Header = () => {
   }, [width]);
 
   return (
-    <div className="flex justify-between items-center md:items-baseline xl:pl-48 xl:pt-14 xl:pr-32 lg:px-36 lg:pt-10 md:px-24 px-5 pt-8 text-lbl">
+    <header className="max-w-7xl mx-auto flex justify-between items-center md:items-baseline xl:pl-48 xl:pt-14 xl:pr-32 lg:px-36 lg:pt-10 md:px-24 px-5 pt-8 text-lbl">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,19 +38,19 @@ const Header = () => {
           />
         </svg>
 
-        <h2 className="font-stix text-3xl font-bold hidden lg:block">ARTSY.</h2>
+        <h2 className="font-stix text-[32px] font-bold hidden lg:block">ARTSY.</h2>
       </div>
       <div className="font-satoshi font-medium text-2xl hidden lg:block">
-        <NavLink to="/" className="px-6">
+        <NavLink to="/" className="transition-all duration-150 ease-in-out mx-6 hover:underline">
           Home
         </NavLink>
-        <NavLink to="/marketplace" className="px-6">
+        <NavLink to="/marketplace" className="transition-all duration-150 ease-in-out mx-6 hover:underline">
           MarketPlace
         </NavLink>
-        <NavLink to="/auctions" className="px-6">
+        <NavLink to="/auctions" className="transition-all duration-150 ease-in-out mx-6 hover:underline">
           Auctions
         </NavLink>
-        <NavLink to="/drop" className="px-6">
+        <NavLink to="/drop" className="transition-all duration-150 ease-in-out mx-6 hover:underline">
           Drop
         </NavLink>
       </div>
@@ -64,7 +64,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-10 md:h-10 mr-1 md:mr-6 block md:hidden"
+          className="w-5 h-5 md:w-6 md:h-6 mr-1 md:mr-6 block md:hidden"
         >
           <path
             stroke-linecap="round"
@@ -79,7 +79,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-10 md:h-10 ml-1 md:mr-6"
+          className="w-5 h-5 md:w-8 md:h-8 ml-1 md:mr-6"
         >
           <path
             strokeLinecap="round"
@@ -94,7 +94,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-10 md:h-10 ml-2 md:ml-6 hidden md:block"
+          className="w-5 h-5 md:w-8 md:h-8 ml-2 md:ml-6 hidden md:block"
         >
           <path
             strokeLinecap="round"
@@ -109,7 +109,7 @@ const Header = () => {
           setSidebar(false);
         }}
       />
-    </div>
+    </header>
   );
 };
 

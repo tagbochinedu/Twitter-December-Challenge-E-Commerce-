@@ -1,7 +1,7 @@
 
 const NewsLetter = () => {
   return (
-    <section className="mx-5 lg:mx-14 lg:py-16 lg:border-[0.5px] border-lgr text-lgr font-bask">
+    <section className="max-w-7xl mx-auto lg:py-16 lg:border-[0.5px] border-lgr text-lgr font-bask">
       <h2 className="lg:text-center font-normal text-2xl lg:text-3xl">NEWSLETTER</h2>
       <p className="font-satoshi font-normal text-xs lg:text-3xl lg:text-center my-5">
         Subscribe to get daily updates on new drops & exciting deals{" "}

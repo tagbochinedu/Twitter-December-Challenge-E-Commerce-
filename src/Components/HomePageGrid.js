@@ -11,7 +11,7 @@ const HomePageGrid = () => {
       <h3 className="font-stix font-bold text-xl text-sm md:text-2xl lg:text-3xl xl:text-4xl relative hidden md:block">
         The Boolean Egyptian
       </h3>
-      <p className="text-sm md:text-2xl font-normal text-lgr my-10">
+      <p className="text-sm md:text-xl text-justify font-normal text-lgr py-3 md:py-6 lg:my-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
         purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
         rhoncus dolor pur

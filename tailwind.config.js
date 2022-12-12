@@ -14,6 +14,7 @@ module.exports = {
       },
       lineHeight: {
         lht: "1.6",
+        lbt: '3.0'
       },
       colors: {
         lbl: "#292929",
