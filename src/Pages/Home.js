@@ -26,7 +26,7 @@ const Home = () => {
           images and captures seamlessly in one place. Register to get to
           access.
         </p>
-        <div className='my-8'>
+        <div className='mt-8 mb-28 md:hidden'>
           <img src={img7} alt="pic-collage" className="w-[349px] h-auto" />
         </div>
       </section>
