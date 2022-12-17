@@ -26,7 +26,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-10 md:h-10 block lg:hidden cursor-pointer"
+          className="w-6 h-6 md:w-10 md:h-10 block lg:hidden cursor-pointer"
           onClick={() => {
             setSidebar(true);
           }}
@@ -64,7 +64,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-6 md:h-6 mr-1 md:mr-6 block md:hidden"
+          className="w-6 h-6 md:w-6 md:h-6 mr-1 md:mr-6 block md:hidden"
         >
           <path
             stroke-linecap="round"
@@ -79,7 +79,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-5 h-5 md:w-8 md:h-8 ml-1 md:mr-6"
+          className="w-6 h-6 md:w-8 md:h-8 ml-1 md:mr-6"
         >
           <path
             strokeLinecap="round"

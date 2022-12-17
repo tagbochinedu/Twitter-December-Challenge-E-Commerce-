@@ -6,6 +6,7 @@ import img3 from "../Resources/301.png";
 import img4 from "../Resources/302.png";
 import img5 from "../Resources/303.png";
 import img6 from "../Resources/304.png";
+import img7 from "../Resources/mobilestack.png";
 import NewsLetter from "../Components/NewsLetter";
 import Hpg from "../Components/HomePageGrid";
 
@@ -17,7 +18,7 @@ const Home = () => {
     <main>
       <section className="max-w-7xl mx-auto xl:px-48 xl:pt-14 lg:px-36 lg:pt-10 md:px-24 px-5 text-center">
         <h1 className="my-5 md:my-12 font-clash font-medium leading- lg:font-bold text-2xl md:text-5xl lg:text-7xl text-lbl">
-          Photography is poetry &<br />
+          Photography is poetry {"&"} <br />
           beautiful untold stories
         </h1>
         <p className="font-satoshi font-medium lg:text-center text-base md:text-[27px] leading-lht">
@@ -25,6 +26,9 @@ const Home = () => {
           images and captures seamlessly in one place. Register to get to
           access.
         </p>
+        <div className='my-8'>
+          <img src={img7} alt="pic-collage" className="w-[349px] h-auto" />
+        </div>
       </section>
 
       <section className=" max-w-7xl mx-auto px-5 xl:px-[120px] lg:px-36 md:px-24">
