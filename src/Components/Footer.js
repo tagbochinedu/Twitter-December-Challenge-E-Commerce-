@@ -5,7 +5,7 @@ import svg2 from "../Resources/Vector2.svg";
 
 const Footer = () => {
   return (
-    <footer className="max-w-7xl mx-auto lg:pt-10 pt-8 lg:pt-16">
+    <footer className="max-w-7xl mx-auto px-5 lg:px-0 lg:pt-10 pt-8 lg:pt-16">
       <div className="flex justify-between mb-[91px]">
         <div className="hidden lg:flex justify-center items-center w-4/12">
           <h2 className="font-stix text-3xl font-bold">ARTSY.</h2>
@@ -41,25 +41,25 @@ const Footer = () => {
           </ul>
         </div>
         <div className="w-full lg:w-4/12">
-          <h3 className="text-xl font-poppins mb-4 block lg:hidden">
+          <h3 className="text-xs  md:text-lg lg:text-xl font-poppins mb-4 block lg:hidden">
             Reach Us.
           </h3>
           <div className="flex items-center mb-8 px-4">
-            <img src={svg} alt="svg" className="w-8 mr-2 lg:mr-4" />
+            <img src={svg} alt="svg" className="w-5 w-6 lg:w-8 mr-2 lg:mr-4" />
             <a
               href="mailto:artsystudios@gmail.com"
-              className="text-xl lg:text-2xl font-satoshi"
+              className="text-xs  md:text-lg lg:text-xl lg:text-2xl font-normal font-satoshi"
             >
               artsystudios@gmail.com
             </a>
           </div>
           <div className="flex items-center px-4 mb-8">
-            <img src={svg2} alt="svg" className="w-8 mr-2 lg:mr-4" />
-            <p className="text-xl lg:text-2xl font-satoshi">Lagos, Nigeria</p>
+            <img src={svg2} alt="svg" className="w-5 w-6 lg:w-8 mr-2 lg:mr-4" />
+            <p className="text-xs md:text-lg lg:text-xl lg:text-2xl font-normal font-satoshi">Lagos, Nigeria</p>
           </div>
         </div>
       </div>
-      <div className="text-center pb-11">
+      <div className="text-center pb-11 hidden md:block">
         <p className="text-lg font-rubik text-[#a19d9d]">
           Artsystudios © 2022. All Rights Reserved.
         </p>

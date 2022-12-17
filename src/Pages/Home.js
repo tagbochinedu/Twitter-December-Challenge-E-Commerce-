@@ -27,12 +27,12 @@ const Home = () => {
           access.
         </p>
         <div className='mt-20 mb-20 md:hidden'>
-          <img src={img7} alt="pic-collage" className="w-[349px] h-auto" />
+          <img src={img7} alt="pic-collage" className="w-[349px] h-auto mx-auto" />
         </div>
       </section>
 
       <section className=" max-w-7xl mx-auto px-5 xl:px-[120px] lg:px-36 md:px-24">
-        <h2 className="font-satoshi font-semibold lg:font-normal text-3xl md:text-4xl xl:text-5xl text-lgr lg:mb-9">
+        <h2 className="font-satoshi font-bold lg:font-normal text-2xl md:text-4xl xl:text-5xl text-lgr lg:mb-9">
           Featured products
         </h2>
         <div className="lg:border-t-lgr lg:border-t-[0.5px] py-4 md:py-8 lg:py-16 lg:flex relative">
@@ -196,7 +196,7 @@ const Home = () => {
             </div>
             <div className="lg:w-4/10 font-satoshi text-sm lg:text-2xl font-normal flex items-center justify-end">
               <p className="mr-10">See More</p>
-              <p className="p-2 lg:p-4 rounded-xl border-white border-2 hover:bg-white hover:text-black transition-all ease-in-out duration-500">
+              <p className="p-2 lg:p-4 rounded-xl border-white border-[1px] lg:border-2 hover:bg-white hover:text-black transition-all ease-in-out duration-500">
                 Set a reminder
               </p>
             </div>
@@ -217,8 +217,8 @@ const Home = () => {
         </div>
       </section>
       <section className="max-w-screen-2xl mx-auto my-16 lg:my-[190px] border-y-[0.5px] border-lgr text-lgr">
-        <div className="py-6 lg:py-[59px] pl-2 lg:pl-20 pr-9 lg:pr-72 flex justify-between items-center">
-          <h2 className="font-satoshi font-medium text-2xl lg:text-5xl">
+        <div className="py-6 lg:py-[59px] px-5 lg:pl-20 lg:pr-72 flex justify-between items-center">
+          <h2 className="font-satoshi font-medium text-xl lg:text-5xl">
             Explore Marketplace
           </h2>
           <Link to="/marketplace">
@@ -228,7 +228,7 @@ const Home = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="border-[0.5px] lg:border-0 border-lgr w-20 lg:text-[#4693ED] animate"
+              className=" lg:border-0 border-lgr w-8 lg:w-20 lg:text-[#4693ED] animate"
             >
               <path
                 strokeLinecap="round"
@@ -241,8 +241,8 @@ const Home = () => {
 
         <hr className="border-lgr" />
 
-        <div className="py-6 lg:py-[59px] pl-2 lg:pl-20 pr-9 lg:pr-72 flex justify-between items-center">
-          <h2 className="font-satoshi font-medium text-2xl lg:text-5xl">
+        <div className="py-6 lg:py-[59px] px-5 lg:pl-20 lg:pr-72 flex justify-between items-center">
+          <h2 className="font-satoshi font-medium text-xl lg:text-5xl">
             See Auctions
           </h2>
           <Link to="/auctions">
@@ -252,7 +252,7 @@ const Home = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className=" border-[0.5px] lg:border-0 border-lgr w-20 lg:text-[#4693ED] animate"
+              className=" lg:border-0 border-lgr w-8 lg:w-20 lg:text-[#4693ED] animate"
             >
               <path
                 strokeLinecap="round"
@@ -263,7 +263,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      <section className="max-w-screen-2xl mx-auto bg-[#E2E2E2] px-1 lg:pl-[86px] lg:pr-32 pt-2 lg:pt-12 pb-16 lg:pb-[250px] mb-12 lg:mb-36 font-clash relative">
+      <section className="max-w-screen-2xl mx-auto bg-[#E2E2E2] px-5 lg:pl-[86px] lg:pr-32 pt-2 lg:pt-12 pb-16 lg:pb-[250px] mb-12 lg:mb-36 font-clash relative">
         <div className="flex justify-between  mb-4 lg:mb-12">
           <h2 className="text-xl lg:text-5xl font-semibold leading-[1.5] relative z-30">
             TOP CREATORS OF
@@ -277,16 +277,16 @@ const Home = () => {
             </div>
             <div>
               <ul>
-                <li className="text-base lg:text-3xl pb-2.5 ml-8 relative z-10">
+                <li className="text-base lg:text-3xl pb-1 md:pb-1.5 lg:pb-2.5 ml-8 relative z-10">
                   Editorials
                 </li>
-                <li className="text-base lg:text-3xl py-2.5 ml-8 relative z-10">
+                <li className="text-base lg:text-3xl py-1 md:py-1.5 lg:py-2.5 ml-8 relative z-10">
                   Fashion
                 </li>
-                <li className="text-base lg:text-3xl py-2.5 ml-8 relative z-10">
+                <li className="text-base lg:text-3xl py-1 md:py-1.5 lg:py-2.5 ml-8 relative z-10">
                   Lifestyle
                 </li>
-                <li className="text-base lg:text-3xl pt-2.5 ml-8 relative z-10">
+                <li className="text-base lg:text-3xl pt-1 md:pt-1.5 lg:pt-2.5 ml-8 relative z-10">
                   Blueprint
                 </li>
               </ul>
@@ -304,7 +304,7 @@ const Home = () => {
           <img
             src={img4}
             alt="slide"
-            className="w-[580px] top-0 lg:top-auto lg:bottom-0 absolute z-30 fade3"
+            className="lg:w-[540px] h-full lg:top-0 absolute z-30 fade3"
           />
           <img
             src={img5}
