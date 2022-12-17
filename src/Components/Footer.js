@@ -53,7 +53,7 @@ const Footer = () => {
               artsystudios@gmail.com
             </a>
           </div>
-          <div className="flex items-center px-4 mb-8">
+          <div className="flex items-center px-4 lg:mb-8">
             <img src={svg2} alt="svg" className="w-5 w-6 lg:w-8 mr-2 lg:mr-4" />
             <p className="text-xs md:text-lg lg:text-xl lg:text-2xl font-normal font-satoshi">Lagos, Nigeria</p>
           </div>
