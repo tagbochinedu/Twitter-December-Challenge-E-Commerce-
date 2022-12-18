@@ -41,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="w-full lg:w-4/12">
-          <h3 className="text-xs  md:text-lg lg:text-xl font-poppins mb-4 block lg:hidden">
+          <h3 className="text-base  md:text-lg lg:text-xl font-poppins mb-4 block lg:hidden">
             Reach Us.
           </h3>
           <div className="flex items-center mb-8 px-4">

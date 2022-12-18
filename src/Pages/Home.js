@@ -30,6 +30,7 @@ const Home = () => {
           <img src={img7} alt="pic-collage" className="w-[349px] h-auto mx-auto" />
         </div>
       </section>
+      
 
       <section className=" max-w-7xl mx-auto px-5 xl:px-[120px] lg:px-36 md:px-24">
         <h2 className="font-satoshi font-bold lg:font-normal text-2xl md:text-4xl xl:text-5xl text-lgr lg:mb-9">
