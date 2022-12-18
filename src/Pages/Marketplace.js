@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const Marketplace = () => {
+  const [price, setPrice] = useState("150.00");
   return (
     <section className="max-w-7xl mx-auto px-5 lg:px-28 lg:pt-32">
       <div className="w-3/12">
@@ -71,11 +74,54 @@ const Marketplace = () => {
               <span className="checkmark"></span>
             </label>
           </div>
+          <div className="mb-36">
+            <h3 className="font-satoshi font-medium lg:text-2xl">By price</h3>
+            <p className="text-2xl font-normal mt-12 mb-16">
+              $0 - <span>${price}</span>
+            </p>
+            <div className="flex justify-center">
+              <div className="w-[25px] h-[25px] rounded-full border-[#333333] border-[2px] text-white text-xs">
+                o
+              </div>
+              <input
+                type="range"
+                max="150.01"
+                step="0.01"
+                value={price}
+                onChange={(e) => {
+                  setPrice(e.target.value);
+                }}
+              />
+            </div>
+          </div>
           <div className="mb-16">
-            <h3 className="font-satoshi font-medium lg:text-2xl">
-              By price
-            </h3>
-            <input type='range' value='20' max='50'/>
+            <h3 className="font-satoshi font-normal lg:text-2xl">By price</h3>
+            input
+            <div className=""><label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              All
+              <input type="checkbox" />
+              <span className="checkmark hidden"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              Below $100.00
+              <input type="checkbox" />
+              <span className="checkmark hidden"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              $100.00 to $150.00
+              <input type="checkbox" />
+              <span className="checkmark hidden"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              $150.00 to $200.00
+              <input type="checkbox" />
+              <span className="checkmark hidden"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              Above $200.00
+              <input type="checkbox" />
+              <span className="checkmark hidden"></span>
+            </label></div>
           </div>
         </div>
       </div>
