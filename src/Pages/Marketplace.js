@@ -48,27 +48,27 @@ const Marketplace = () => {
             <h3 className="font-satoshi font-medium lg:text-2xl mb-2">
               By category
             </h3>
-            <label className="container flex items-center lg:mt-1.5 font-satoshi lg:text-xl font-normal">
+            <label className="container pl-[30px] flex items-center lg:mt-1.5 font-satoshi lg:text-xl font-normal">
               Editorials
               <input type="checkbox" />
               <span className="checkmark"></span>
             </label>
-            <label className="container flex items-center lg:my-1.5 font-satoshi lg:text-xl font-normal">
+            <label className="container pl-[30px] flex items-center lg:my-1.5 font-satoshi lg:text-xl font-normal">
               Fashion
               <input type="checkbox" />
               <span className="checkmark"></span>
             </label>
-            <label className="container flex items-center lg:my-1.5 font-satoshi lg:text-xl font-normal">
+            <label className="container pl-[30px] flex items-center lg:my-1.5 font-satoshi lg:text-xl font-normal">
               Optics
               <input type="checkbox" />
               <span className="checkmark"></span>
             </label>
-            <label className="container flex items-center lg:my-1.5 font-satoshi lg:text-xl font-normal">
+            <label className="container pl-[30px] flex items-center lg:my-1.5 font-satoshi lg:text-xl font-normal">
               Art & Museum
               <input type="checkbox" />
               <span className="checkmark"></span>
             </label>
-            <label className="container flex items-center lg:mt-1.5 font-satoshi lg:text-xl font-normal">
+            <label className="container pl-[30px] flex items-center lg:mt-1.5 font-satoshi lg:text-xl font-normal">
               Nature
               <input type="checkbox" />
               <span className="checkmark"></span>
@@ -128,7 +128,7 @@ const Marketplace = () => {
             <hr />
           </div>
           <div className="mb-4">
-            <h3 className="font-satoshi font-normal lg:text-2xl mb-3">By artist</h3>
+            <h3 className="font-satoshi font-normal lg:text-2xl mb-3">By collection year</h3>
             <div>
               <label className="container flex items-center lg:mb-2 font-satoshi lg:text-xl font-normal">
                 Before 2010

@@ -127,7 +127,6 @@ opacity: 0
         .container {
           display: block;
           position: relative;
-          padding-left: 30px;
           margin-bottom: 12px;
           cursor: pointer;
           font-size: 22px;
@@ -183,7 +182,7 @@ opacity: 0
         /* Style the checkmark/indicator */
         .container .checkmark:after {
           left: 5px;
-          top: 0px;
+          top: 0;
           width: 6px;
           height: 13px;
           border: solid black;
