@@ -41,8 +41,41 @@ const Marketplace = () => {
             </h3>
           </div>
           <hr className="h-1.5 border-[#AFB091] border-2 bg-[#AFB091] lg:mb-14" />
-          <div className=''>
-              <h3 className='font-satoshi'>Category</h3>
+          <div className="mb-16">
+            <h3 className="font-satoshi font-medium lg:text-2xl">
+              By category
+            </h3>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              Editorials
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              Fashion
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              Optics
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              Art & Museum
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+            </label>
+            <label className="container lg:mt-3 font-satoshi lg:font-2xl font-normal">
+              Nature
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+            </label>
+          </div>
+          <div className="mb-16">
+            <h3 className="font-satoshi font-medium lg:text-2xl">
+              By price
+            </h3>
+            <input type='range' value='20' max='50'/>
           </div>
         </div>
       </div>
