@@ -1,9 +1,10 @@
 import { useState } from "react";
+import Products from "../Components/Products";
 
 const Marketplace = () => {
   const [price, setPrice] = useState("150.00");
   return (
-    <section className="max-w-7xl mx-auto px-5 lg:px-28 lg:pt-10">
+    <section className="max-w-7xl mx-auto px-5 lg:px-28 lg:pt-10 flex">
       <div className="w-3/12">
         <form className="flex justify-between bg-[#F4F2F2] justify-center py-2 pl-6 pr-0 rounded-xl">
           <svg
@@ -76,7 +77,9 @@ const Marketplace = () => {
             <hr />
           </div>
           <div className="lg:mb-4">
-            <h3 className="font-satoshi font-medium lg:text-2xl mb-3">By price</h3>
+            <h3 className="font-satoshi font-medium lg:text-2xl mb-3">
+              By price
+            </h3>
             <p className="lg:text-xl font-normal text-center lg:mb-1.5">
               $0 - <span>${price}</span>
             </p>
@@ -97,7 +100,9 @@ const Marketplace = () => {
             <hr />
           </div>
           <div className="mb-4">
-            <h3 className="font-satoshi font-normal lg:text-2xl mb-3">By artist</h3>
+            <h3 className="font-satoshi font-normal lg:text-2xl mb-3">
+              By artist
+            </h3>
             <div className="">
               <label className="container flex items-center lg:mb-1.5 font-satoshi lg:text-xl font-normal">
                 All
@@ -128,7 +133,9 @@ const Marketplace = () => {
             <hr />
           </div>
           <div className="mb-4">
-            <h3 className="font-satoshi font-normal lg:text-2xl mb-3">By collection year</h3>
+            <h3 className="font-satoshi font-normal lg:text-2xl mb-3">
+              By collection year
+            </h3>
             <div>
               <label className="container flex items-center lg:mb-2 font-satoshi lg:text-xl font-normal">
                 Before 2010
@@ -156,7 +163,10 @@ const Marketplace = () => {
         </div>
       </div>
 
-      <div className="9/12"></div>
+      <div className="w-9/12 md:ml-5">
+        <div></div>
+        <div><Products/></div>
+      </div>
     </section>
   );
 };
