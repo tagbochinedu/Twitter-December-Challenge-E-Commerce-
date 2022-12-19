@@ -5,7 +5,7 @@ const Marketplace = () => {
   const [price, setPrice] = useState("150.00");
   return (
     <section className="max-w-7xl mx-auto px-5 lg:px-28 lg:pt-10 flex">
-      <div className="w-3/12">
+      <div className="hidden md:block md:w-3/12">
         <form className="flex justify-between bg-[#F4F2F2] justify-center py-2 pl-6 pr-0 rounded-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ const Marketplace = () => {
         </div>
       </div>
 
-      <div className="w-9/12 md:ml-5">
+      <div className="w-full md:w-9/12 md:ml-5">
         <div></div>
         <div><Products/></div>
       </div>
