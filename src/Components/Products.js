@@ -19,7 +19,7 @@ const Products = () => {
           </div>
         );
       })}
-      <button>See More</button>
+      <button className='font-2xl font-medium border-[1px] border-[#333333] rounded-md font-satoshi px-16 py-3'>See More</button>
     </div>
   );
 };
