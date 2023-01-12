@@ -1,4 +1,5 @@
 import { Products as Prod } from "../Resources/Resources";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
@@ -6,7 +7,8 @@ const Products = () => {
       <div className="md:flex md:justify-evenly relative flex-wrap ">
         {Prod.map((product) => {
           return (
-            <div
+            <Link
+              to={`${product.id}`}
               className="w-full md:w-4/12 lg:max-w-xs mb-4 "
               key={product.id}
             >
@@ -21,7 +23,7 @@ const Products = () => {
                   </h3>
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
